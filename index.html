@@ -7,44 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Subscription</title>
 </head>
 
 <body>
     <div class="main container">
         <h1 class="main-head">Управление рассылками</h1>
-        <h2 class="main-head__text">Здравствуйте, Андрей! Выберите категории писем, от которых хотите отписаться</h2>
+        <h2 class="main-head__text">Здравствуйте! Выберите категории писем, от которых хотите отписаться</h2>
         <!-- FIRST -->
         <div class="main-properties">
             <h3 class="main-head__h3">Общие уведомления</h3>
-            <div class="main-properties__block d-flex justify-content-start">
+            <div class="main-properties__block">
                 <div class="main-properties__text">Приветственная серия</div>
                 <div class="main-properties__switch form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheck1" checked>
-                    <label class="form-check-label" for="flexSwitchCheck">4 полезных и емких письма в течении
+                    <label class="form-check-label" for="flexSwitchCheck1">4 полезных и емких письма в течении
                         месяца</label>
                 </div>
             </div>
-            <div class="main-properties__block d-flex justify-content-start">
+            <div class="main-properties__block">
                 <div class="main-properties__text">
                     Образовательные вебинары
                 </div>
                 <div class="main-properties__switch form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheck2">
-                    <label class="form-check-label" for="flexSwitchCheck">
-                        <p class="main-properties__switch-text">Бесплатные вебинаты проводят 1 раз в 2 недели.Вы будете
-                            получать 2 письма с наполнением о предстоящем вебинаре</p>
+                    <label class="form-check-label" for="flexSwitchCheck2">
+                        Бесплатные вебинаты проводят 1 раз в 2 недели.Вы будете получать 2 письма с наполнением о предстоящем вебинаре
                     </label>
                 </div>
             </div>
-            <div class="main-properties__block d-flex justify-content-start">
+            <div class="main-properties__block">
                 <div class="main-properties__text">
                     Личные сообщения
                 </div>
-                <div class="main-properties__switch d-flex align-items-center form-check form-switch">
+                <div class="main-properties__switch form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheck3" checked>
-                    <label class="form-check-label" for="flexSwitchCheck">
+                    <label class="form-check-label" for="flexSwitchCheck3">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Мгновенно</option>
                             <option value="1">1 раз в день</option>
@@ -57,7 +56,7 @@
         <!-- Second -->
         <div class="site-properties">
             <h3>Уведомление по Сайтам</h3>
-            <div class="main-properties__block d-flex justify-content-start">
+            <div class="main-properties__block">
                 <div class="main-properties__text site-properties__text">Новости</div>
                 <div class="main-properties__switch form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheck4" checked>
@@ -67,8 +66,8 @@
                 <h4>Поисковые агенты</h4>
                 <div class="agents-block">
                     <div class="agents-block_head">Бизнес</div>
-                    <div class="main-properties__block d-flex justify-content-start">
-                        <div class="main-properties__text d-flex justify-content-between align-items-center">
+                    <div class="main-properties__block">
+                        <div class="main-properties__text ">
                             <div>
                                 <div class="chip">
                                     SEO
@@ -87,11 +86,11 @@
                                 </div>
                             </div>
                             <div class="modal-block">
-                                <a href="#" id="myBtn">Детали</a>
-                                <div id="myModal" class="modal">
+                                <a href="#" id="myBtn" onclick="document.getElementById('myModal1').style.display='block'">Детали</a>
+                                <div id="myModal1" class="modal">
                                     <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p>Lorem ipsum...</p>
+                                        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                                        <p>Lorem ipsum qweqweq...</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,14 +98,14 @@
                         <div class="main-properties__switch form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheck5" checked>
                             <label class="form-check-label" for="flexSwitchCheck">
-                                <p class="main-properties__switch-text">Поисковый агент рассылает 1 письмо в неделю при
+                                <p>Поисковый агент рассылает 1 письмо в неделю при
                                     условии что найдены новые площадки</p>
                             </label>
                         </div>
                     </div>
                     <div class="agents-block_head">SEO</div>
 
-                    <div class="main-properties__block d-flex justify-content-start">
+                    <div class="main-properties__block">
                         <div class="main-properties__text">
                             <div>
                                 <div class="chip">
@@ -126,11 +125,11 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="#" id="myBtn">Детали</a>
-                                <div id="myModal" class="modal">
+                                <a href="#" id="myBtn" onclick="document.getElementById('myModal2').style.display='block'">Детали</a>
+                                <div id="myModal2" class="modal">
                                     <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p>Lorem ipsum...</p>
+                                        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                                        <p>Lorem ipsum qweqweq...</p>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +140,7 @@
                     </div>
                     <div class="agents-block_head">Аналитика</div>
 
-                    <div class="main-properties__block d-flex justify-content-start">
+                    <div class="main-properties__block">
                         <div class="main-properties__text">
                             <div>
                                 <div class="chip">
@@ -161,11 +160,11 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="#" id="myBtn">Детали</a>
-                                <div id="myModal" class="modal">
+                                <a href="#" id="myBtn" onclick="document.getElementById('myModal3').style.display='block'">Детали</a>
+                                <div id="myModal3" class="modal">
                                     <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p>Lorem ipsum...</p>
+                                        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                                        <p>Lorem ipsum qweqweq...</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,18 +175,18 @@
                     </div>
                     <div class="agents-block_head">Ссылки</div>
 
-                    <div class="main-properties__block d-flex justify-content-start">
+                    <div class="main-properties__block">
                         <div class="main-properties__text">
                             <div class="chip">
                                 ССылка не найдена
                                 <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
                             </div>
                             <div>
-                                <a href="#" id="myBtn">Детали</a>
-                                <div id="myModal" class="modal">
+                                <a href="#" id="myBtn" onclick="document.getElementById('myModal4').style.display='block'">Детали</a>
+                                <div id="myModal4" class="modal">
                                     <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p>Lorem ipsum...</p>
+                                        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                                        <p>Lorem ipsum qweqweq...</p>
                                     </div>
                                 </div>
                             </div>
@@ -201,9 +200,9 @@
             </div>
             <div class="site-properties__companies">
                 <h4>Рекламные компании</h4>
-                <div class="main-properties__block d-flex justify-content-start align-items-center">
+                <div class="main-properties__block">
                     <div class="main-properties__text">Продажа</div>
-                    <div class="main-properties__switch d-flex align-items-center form-check form-switch">
+                    <div class="main-properties__switch form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheck">
                         <label class="form-check-label" for="flexSwitchCheck">
                             <select class="form-select" aria-label="Default select example">
@@ -214,9 +213,9 @@
                         </label>
                     </div>
                 </div>
-                <div class="main-properties__block d-flex justify-content-start align-items-center">
+                <div class="main-properties__block">
                     <div class="main-properties__text">Оренда</div>
-                    <div class="main-properties__switch d-flex align-items-center form-check form-switch">
+                    <div class="main-properties__switch form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheck9">
                         <label class="form-check-label" for="flexSwitchCheck">
                             <select class="form-select" aria-label="Default select example">
@@ -232,7 +231,7 @@
         <!-- Third -->
         <div class="telegram-properties">
             <h3>Уведомления по Телеграму</h3>
-            <div class="main-properties__block d-flex justify-content-start">
+            <div class="main-properties__block">
                 <div class="main-properties__text site-properties__text">Новости</div>
                 <div class="main-properties__switch form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheck10">
@@ -241,7 +240,7 @@
         </div>
         <!-- Fourth -->
         <div class="accept-buttons">
-            <button class="accept-buttons__casual">
+            <button class="accept-buttons__casual" onclick="swichAccept()">
                 По умолчанию
             </button>
             <button class="accept-buttons__save" onclick="document.getElementById('id01').style.display='block'">
@@ -254,23 +253,56 @@
                     <div class="container">
                         <h1>Сохранить изменения</h1>
                         <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            <button type="button" onclick="showSecondModal()"
                                 class="cancelbtn">Да</button>
                             <button type="button" onclick="document.getElementById('id01').style.display='none'"
                                 class="deletebtn">Нет</button>
                         </div>
                     </div>
-
+                </form>
+            </div>
+            <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <h1>Успешно</h1>
+                        <div class="clearfix">
+                            <button type="button" onclick="closeModal('id02')"
+                                class="cancelbtn">Ок</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="main-properties__switch d-flex align-items-center form-check form-switch">
-        <input class="form-check" type="checkbox" id="flexSwitchCheck">
-        <label class="form-check" for="flexSwitchCheck">
-          
-        </label>
-    </div>
+    <script>
+        function showSecondModal() {
+            // document.getElementById('id01').style.display = 'none';
+            closeModal('id01');
+            document.getElementById('id02').style.display = 'block';
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        function swichAccept() {
+            var arrCheck = document.getElementsByClassName('form-check-input');
+            // arrCheck.forEach(element => {
+            //     element.checked = true;
+            // });
+            document.getElementsByClassName('input').reset ();
+
+            //  for (var i = 0; i < check.length; i++) {
+            //     if (check[i].type == 'checkbox') {
+            //         check[i].checked = true;
+                    
+            //         }   
+                }
+                console.log(arrCheck);
+              
+    </script>
+
 </body>
 
 </html>
