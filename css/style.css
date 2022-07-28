@@ -23,6 +23,7 @@
 }
 .accept-buttons {
     margin: 40px 0;
+    
 
 }
 .main-properties__block{
@@ -43,6 +44,7 @@
     width: 50%;
 }
 .main-properties__switch{
+    display: flex;
     align-items: center;
     /* margin-top: 20px; */
     width: 50%;
